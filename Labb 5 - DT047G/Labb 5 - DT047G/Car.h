@@ -3,13 +3,14 @@
 #define CAR_H
 #include <string>
 #include <vector>
+#include <iostream>
 class Car {
 public:
 	Car(std::string name, int speed) : name(name), speed(speed) {}
-	friend bool operator==(const Car& c1, const Car& c2)
-	{
-		return c1.name == c2.name;
-	}
+	bool operator==(const Car& c1) const;
+
+	std::string getName() const;
+	int getSpeed() const;
 
 private:
 	std::string name;
