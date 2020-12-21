@@ -9,7 +9,7 @@ std::string Car::getName() const
 	return name;
 }
 
-int Car::getSpeed() const
+double Car::getSpeed() const
 {
 	return speed;
 }

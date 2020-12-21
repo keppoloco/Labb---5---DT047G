@@ -6,15 +6,15 @@
 #include <iostream>
 class Car {
 public:
-	Car(std::string name, int speed) : name(name), speed(speed) {}
+	Car(std::string name, double speed) : name(name), speed(speed) {}
 	bool operator==(const Car& c1) const;
 
 	std::string getName() const;
-	int getSpeed() const;
+	double getSpeed() const;
 
 private:
 	std::string name;
-	int speed;
+	double speed;
 };
 
 
